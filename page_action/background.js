@@ -2,7 +2,7 @@ chrome.runtime.onInstalled.addListener(function () {
   chrome.declarativeContent.onPageChanged.removeRules(
     ["googleRule"],
     function () {
-      chrome.declarativeContent.onPageChanged.addRule([
+      chrome.declarativeContent.onPageChanged.addRules([
         {
           id: "googleRule",
           conditions: [
@@ -10,7 +10,7 @@ chrome.runtime.onInstalled.addListener(function () {
               pageUrl: { urlContains: "google.co.uk" },
             }),
           ],
-          actions: [[new chrome.declarativeContent.ShowPageAction()]],
+          actions: [new chrome.declarativeContent.ShowPageAction()],
         },
       ]);
     }
