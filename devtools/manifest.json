@@ -3,5 +3,10 @@
     "name" : "devtools",
     "version" : "0.1.0",
     "description" : "An example devtools extension",
-    "author" : "Ebrahim Salehipanah"
+    "author" : "Ebrahim Salehipanah",
+    "devtools_page" : "devtools.html",
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    }
 }
