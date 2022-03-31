@@ -1,5 +1,5 @@
 {
-    "name": "browser_action",
+    "name": "__MSG_extensionName__",
     "manifest_version": 2,
     "version": "1.0",
     "description": "An example browser action extension",
@@ -17,5 +17,6 @@
         "matches": ["*://*/*"],
         "js" : ["content.js"],
         "css" : ["content.css"]
-    }]
+    }],
+    "default_locale" : "en"
 }

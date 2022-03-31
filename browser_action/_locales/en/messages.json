@@ -1,0 +1,6 @@
+{
+    "extensionName" :{
+        "message" : "browser_action",
+        "description" : "Extension name"
+    }
+}
